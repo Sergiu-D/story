@@ -29,3 +29,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
+img {
+  aspect-ratio: 2/1;
+}
