@@ -1,3 +1,7 @@
+:root {
+  --border-color: rgba(0, 0, 0, 0.2);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
@@ -6,7 +10,7 @@ body {
 a {
   width: 100%;
   font-size: 0.75rem !important;
-  border-color: rgba(0, 0, 0, 0.2) !important;
+  border-color: var(--border-color) !important;
 }
 ul {
   list-style: none;
@@ -138,12 +142,63 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
-@media (min-width: 575px) {
+/* Benefits */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.icon-benefits {
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+@media (min-width: 576px) {
   .img-hero {
     height: 100vh;
   }
 
   a {
     width: fit-content;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-item {
+    border: none;
+  }
+  .grid-item:not(:nth-child(2n)) {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .grid-item:nth-child(2n) {
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-item:not(:nth-child(3n)) {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .grid-item:nth-child(3n) {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .grid-item:nth-last-child(-n + 3) {
+    border-bottom: none;
   }
 }
