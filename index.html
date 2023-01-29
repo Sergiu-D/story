@@ -16,6 +16,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
     <link rel="stylesheet" href="./css/styles.css">
     <title>Story</title>
 </head>
@@ -26,38 +33,523 @@
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
+    <!-- Header -->
+    <header class="container-fluid h-100">
+        <div class="row flex-column-reverse flex-sm-row">
+            <div class="col-12 col-sm-6 py-5 px-4 p-lg-5 d-flex flex-column align-items-center justify-content-center">
+                <h1>Story</h1>
+                <p class="fw-light text-center">A (modular, highly tweakable) responsive one-page template designed by
+                    <u>HTML5
+                        UP</u> and released for free under the <u>Creative Commons.</u>
+                </p>
 
-    <!-- Cards -->
-    <!-- <img src="./assets/images/hero.jpg">
-    <img src="./assets/images/card-1.jpg">
-    <img src="./assets/images/card-2.jpg">
-    <img src="./assets/images/card-3.jpg"> -->
-    <div class="w-100 h-100">
-        <img src="./assets/images/card-1.jpg" loading="lazy" width="600" height="400" />
-    </div>
-    <img src="./assets/images/card-2.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/images/card-3.jpg" loading="lazy" width="600" height="400" />
-    <!-- Slider -->
-    <img src="./assets/slider/slide-1.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-2.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-3.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-4.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-5.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-6.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-7.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-8.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-9.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-10.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-11.jpg" loading="lazy" width="600" height="400" />
-    <img src="./assets/slider/slide-12.jpg" loading="lazy" width="600" height="400" />
+                <a href="#"
+                    class="btn btn-outline-dark text-uppercase border-opacity-25 border-radius-50 my-4 py-2 px-sm-4">get
+                    started</a>
+            </div>
+            <div class="col-12 col-sm-6 g-0">
+                <img class="img-hero img-fluid" src="./assets/images/hero.jpg" alt="lake">
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid g-0">
+        <!-- Cards -->
+        <section class="row border-top border-bottom g-0">
+            <div class="row flex-column-reverse flex-sm-row-reverse border-bottom g-0">
+                <div
+                    class="col-12 col-sm-6 col-lg-8 py-5 px-4 p-lg-5 d-flex flex-column align-items-center justify-content-center align-items-sm-start">
+                    <h1>Magna etiam feugiat</h1>
+                    <p class="fw-light text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi id
+                        ante sed ex pharetra lacinia sit amet vel massa. Donec
+                        facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium
+                        massa et, hendrerit
+                        vestibulum odio lorem ipsum dolor sit amet.
+                    </p>
+
+                    <a href="#"
+                        class="btn btn-outline-dark text-uppercase border-opacity-25 border-radius-50 my-4 py-2 px-sm-4">learn
+                        more</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 g-0">
+                    <img class="img-fluid" src="./assets/slider/slide-2.jpg" alt="lake">
+                </div>
+            </div>
+            <div class="row flex-column-reverse flex-sm-row border-bottom g-0">
+                <div
+                    class="col-12 col-sm-6 col-lg-8 py-5 px-4 p-lg-5 d-flex flex-column align-items-center justify-content-center align-items-sm-start">
+                    <h1>Tempus adipiscing</h1>
+                    <p class="fw-light text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi
+                        id
+                        ante sed ex pharetra lacinia sit amet vel massa. Donec
+                        facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium
+                        massa et, hendrerit
+                        vestibulum odio lorem ipsum dolor sit amet.
+                    </p>
+
+                    <a href="#"
+                        class="btn btn-outline-dark text-uppercase border-opacity-25 border-radius-50 my-4 py-2 px-sm-4">learn
+                        more</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 g-0">
+                    <img class="img-fluid" src="./assets/slider/slide-3.jpg" alt="lake">
+                </div>
+            </div>
+            <div class="row flex-column-reverse flex-sm-row-reverse g-0">
+                <div
+                    class="col-12 col-sm-6 col-lg-8 py-5 px-4 p-lg-5 d-flex flex-column align-items-center justify-content-center align-items-sm-start">
+                    <h1>Pharetra etiam nulla</h1>
+                    <p class="fw-light text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                        Morbi id
+                        ante sed ex pharetra lacinia sit amet vel massa. Donec
+                        facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra
+                        pretium
+                        massa et, hendrerit
+                        vestibulum odio lorem ipsum dolor sit amet.
+                    </p>
+
+                    <a href="#"
+                        class="btn btn-outline-dark text-uppercase border-opacity-25 border-radius-50 my-4 py-2 px-sm-4">learn
+                        more</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 g-0">
+                    <img class="img-fluid" src="./assets/slider/slide-1.jpg" alt="lake">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="gallery">
+                <div id="gallery-container" class="gallery-container">
+                    <ul class="gallery-inner">
+                        <li class="gallery-item">
+
+                            <!-- Gallery item -->
+                            <button type="button" class="btn w-100 h-100 p-0 border-0" data-bs-toggle="modal"
+                                data-bs-target="#gallery-item-1">
+                                <img src="./assets/slider/slide-1.jpg" data-splide-lazy="./assets/slider/slide-1.jpg"
+                                    alt="">
+
+                                <!-- Content -->
+                                <div
+                                    class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                    <h3>Ipsum Dolor</h3>
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                                        asperiores ratione
+                                        atque mollitia nesciunt cupiditate.</p>
+                                    <a href="#"
+                                        class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                        more</a>
+                                </div>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="gallery-item-1" tabindex="-1" aria-labelledby="gallery-item-1"
+                                aria-hidden="true">
+
+                                <div class="modal-dialog vw-100 vh-100 p-0">
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-content w-100 h-75">
+                                        <img src="./assets/slider/slide-1.jpg"
+                                            data-splide-lazy="./assets/slider/slide-1.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <ul class="gallery-inner">
+                            <li class="gallery-item">
+
+                                <!-- Gallery item -->
+                                <button type="button" class="btn w-100 h-100 p-0 border-0" data-bs-toggle="modal"
+                                    data-bs-target="#gallery-item-2">
+                                    <img src="./assets/slider/slide-2.jpg"
+                                        data-splide-lazy="./assets/slider/slide-2.jpg" alt="">
+
+                                    <!-- Content -->
+                                    <div
+                                        class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                        <h3>Ipsum Dolor</h3>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Sint
+                                            asperiores ratione
+                                            atque mollitia nesciunt cupiditate.</p>
+                                        <a href="#"
+                                            class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                            more</a>
+                                    </div>
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="gallery-item-2" tabindex="-1"
+                                    aria-labelledby="gallery-item-2" aria-hidden="true">
+
+                                    <div class="modal-dialog vw-100 vh-100 p-0">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-content w-100 h-75">
+                                            <img src="./assets/slider/slide-2.jpg"
+                                                data-splide-lazy="./assets/slider/slide-2.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul class="gallery-inner">
+                                <li class="gallery-item">
+
+                                    <!-- Gallery item -->
+                                    <button type="button" class="btn w-100 h-100 p-0 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#gallery-item-3">
+                                        <img src="./assets/slider/slide-3.jpg"
+                                            data-splide-lazy="./assets/slider/slide-3.jpg" alt="">
+
+                                        <!-- Content -->
+                                        <div
+                                            class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                            <h3>Ipsum Dolor</h3>
+                                            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sint
+                                                asperiores ratione
+                                                atque mollitia nesciunt cupiditate.</p>
+                                            <a href="#"
+                                                class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                more</a>
+                                        </div>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="gallery-item-3" tabindex="-1"
+                                        aria-labelledby="gallery-item-3" aria-hidden="true">
+
+                                        <div class="modal-dialog vw-100 vh-100 p-0">
+                                            <div class="modal-header border-0">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-content w-100 h-75">
+                                                <img src="./assets/slider/slide-3.jpg"
+                                                    data-splide-lazy="./assets/slider/slide-3.jpg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <ul class="gallery-inner">
+                                    <li class="gallery-item">
+
+                                        <!-- Gallery item -->
+                                        <button type="button" class="btn w-100 h-100 p-0 border-0"
+                                            data-bs-toggle="modal" data-bs-target="#gallery-item-4">
+                                            <img src="./assets/slider/slide-4.jpg"
+                                                data-splide-lazy="./assets/slider/slide-4.jpg" alt="">
+
+                                            <!-- Content -->
+                                            <div
+                                                class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                <h3>Ipsum Dolor</h3>
+                                                <p class="text-center">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Sint
+                                                    asperiores ratione
+                                                    atque mollitia nesciunt cupiditate.</p>
+                                                <a href="#"
+                                                    class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                    more</a>
+                                            </div>
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="gallery-item-4" tabindex="-1"
+                                            aria-labelledby="gallery-item-4" aria-hidden="true">
+
+                                            <div class="modal-dialog vw-100 vh-100 p-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-content w-100 h-75">
+                                                    <img src="./assets/slider/slide-4.jpg"
+                                                        data-splide-lazy="./assets/slider/slide-4.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <ul class="gallery-inner">
+                                        <li class="gallery-item">
+
+                                            <!-- Gallery item -->
+                                            <button type="button" class="btn w-100 h-100 p-0 border-0"
+                                                data-bs-toggle="modal" data-bs-target="#gallery-item-5">
+                                                <img src="./assets/slider/slide-5.jpg"
+                                                    data-splide-lazy="./assets/slider/slide-5.jpg" alt="">
+
+                                                <!-- Content -->
+                                                <div
+                                                    class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                    <h3>Ipsum Dolor</h3>
+                                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Sint
+                                                        asperiores ratione
+                                                        atque mollitia nesciunt cupiditate.</p>
+                                                    <a href="#"
+                                                        class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                        more</a>
+                                                </div>
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="gallery-item-5" tabindex="-1"
+                                                aria-labelledby="gallery-item-5" aria-hidden="true">
+
+                                                <div class="modal-dialog vw-100 vh-100 p-0">
+                                                    <div class="modal-header border-0">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-content w-100 h-75">
+                                                        <img src="./assets/slider/slide-5.jpg"
+                                                            data-splide-lazy="./assets/slider/slide-5.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <ul class="gallery-inner">
+                                            <li class="gallery-item">
+
+                                                <!-- Gallery item -->
+                                                <button type="button" class="btn w-100 h-100 p-0 border-0"
+                                                    data-bs-toggle="modal" data-bs-target="#gallery-item-6">
+                                                    <img src="./assets/slider/slide-6.jpg"
+                                                        data-splide-lazy="./assets/slider/slide-6.jpg" alt="">
+
+                                                    <!-- Content -->
+                                                    <div
+                                                        class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                        <h3>Ipsum Dolor</h3>
+                                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Sint
+                                                            asperiores ratione
+                                                            atque mollitia nesciunt cupiditate.</p>
+                                                        <a href="#"
+                                                            class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                            more</a>
+                                                    </div>
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="gallery-item-6" tabindex="-1"
+                                                    aria-labelledby="gallery-item-6" aria-hidden="true">
+
+                                                    <div class="modal-dialog vw-100 vh-100 p-0">
+                                                        <div class="modal-header border-0">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-content w-100 h-75">
+                                                            <img src="./assets/slider/slide-6.jpg"
+                                                                data-splide-lazy="./assets/slider/slide-6.jpg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <ul class="gallery-inner">
+                                                <li class="gallery-item">
+
+                                                    <!-- Gallery item -->
+                                                    <button type="button" class="btn w-100 h-100 p-0 border-0"
+                                                        data-bs-toggle="modal" data-bs-target="#gallery-item-7">
+                                                        <img src="./assets/slider/slide-7.jpg"
+                                                            data-splide-lazy="./assets/slider/slide-7.jpg" alt="">
+
+                                                        <!-- Content -->
+                                                        <div
+                                                            class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                            <h3>Ipsum Dolor</h3>
+                                                            <p class="text-center">Lorem ipsum dolor sit amet
+                                                                consectetur adipisicing elit. Sint
+                                                                asperiores ratione
+                                                                atque mollitia nesciunt cupiditate.</p>
+                                                            <a href="#"
+                                                                class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                                more</a>
+                                                        </div>
+                                                    </button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="gallery-item-7" tabindex="-1"
+                                                        aria-labelledby="gallery-item-7" aria-hidden="true">
+
+                                                        <div class="modal-dialog vw-100 vh-100 p-0">
+                                                            <div class="modal-header border-0">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-content w-100 h-75">
+                                                                <img src="./assets/slider/slide-7.jpg"
+                                                                    data-splide-lazy="./assets/slider/slide-7.jpg" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <ul class="gallery-inner">
+                                                    <li class="gallery-item">
+
+                                                        <!-- Gallery item -->
+                                                        <button type="button" class="btn w-100 h-100 p-0 border-0"
+                                                            data-bs-toggle="modal" data-bs-target="#gallery-item-8">
+                                                            <img src="./assets/slider/slide-8.jpg"
+                                                                data-splide-lazy="./assets/slider/slide-8.jpg" alt="">
+
+                                                            <!-- Content -->
+                                                            <div
+                                                                class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                                <h3>Ipsum Dolor</h3>
+                                                                <p class="text-center">Lorem ipsum dolor sit amet
+                                                                    consectetur adipisicing elit. Sint
+                                                                    asperiores ratione
+                                                                    atque mollitia nesciunt cupiditate.</p>
+                                                                <a href="#"
+                                                                    class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                                    more</a>
+                                                            </div>
+                                                        </button>
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="gallery-item-8" tabindex="-1"
+                                                            aria-labelledby="gallery-item-8" aria-hidden="true">
+
+                                                            <div class="modal-dialog vw-100 vh-100 p-0">
+                                                                <div class="modal-header border-0">
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-content w-100 h-75">
+                                                                    <img src="./assets/slider/slide-8.jpg"
+                                                                        data-splide-lazy="./assets/slider/slide-8.jpg" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <ul class="gallery-inner">
+                                                        <li class="gallery-item">
+
+                                                            <!-- Gallery item -->
+                                                            <button type="button" class="btn w-100 h-100 p-0 border-0"
+                                                                data-bs-toggle="modal" data-bs-target="#gallery-item-9">
+                                                                <img src="./assets/slider/slide-9.jpg"
+                                                                    data-splide-lazy="./assets/slider/slide-9.jpg"
+                                                                    alt="">
+
+                                                                <!-- Content -->
+                                                                <div
+                                                                    class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                                    <h3>Ipsum Dolor</h3>
+                                                                    <p class="text-center">Lorem ipsum dolor sit amet
+                                                                        consectetur adipisicing elit. Sint
+                                                                        asperiores ratione
+                                                                        atque mollitia nesciunt cupiditate.</p>
+                                                                    <a href="#"
+                                                                        class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                                        more</a>
+                                                                </div>
+                                                            </button>
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="gallery-item-9" tabindex="-1"
+                                                                aria-labelledby="gallery-item-9" aria-hidden="true">
+
+                                                                <div class="modal-dialog vw-100 vh-100 p-0">
+                                                                    <div class="modal-header border-0">
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-content w-100 h-75">
+                                                                        <img src="./assets/slider/slide-9.jpg"
+                                                                            data-splide-lazy="./assets/slider/slide-9.jpg" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <ul class="gallery-inner">
+                                                            <li class="gallery-item">
+
+                                                                <!-- Gallery item -->
+                                                                <button type="button"
+                                                                    class="btn w-100 h-100 p-0 border-0"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#gallery-item-10">
+                                                                    <img src="./assets/slider/slide-10.jpg"
+                                                                        data-splide-lazy="./assets/slider/slide-10.jpg"
+                                                                        alt="">
+
+                                                                    <!-- Content -->
+                                                                    <div
+                                                                        class="gallery-item__content d-flex flex-column text-wrap align-items-center justify-content-center">
+                                                                        <h3>Ipsum Dolor</h3>
+                                                                        <p class="text-center">Lorem ipsum dolor sit
+                                                                            amet consectetur adipisicing elit. Sint
+                                                                            asperiores ratione
+                                                                            atque mollitia nesciunt cupiditate.</p>
+                                                                        <a href="#"
+                                                                            class="btn btn-outline-light text-uppercase border-light border-radius-50">learn
+                                                                            more</a>
+                                                                    </div>
+                                                                </button>
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="gallery-item-10"
+                                                                    tabindex="-1" aria-labelledby="gallery-item-10"
+                                                                    aria-hidden="true">
+
+                                                                    <div class="modal-dialog vw-100 vh-100 p-0">
+                                                                        <div class="modal-header border-0">
+                                                                            <button type="button" class="btn-close"
+                                                                                data-bs-dismiss="modal"
+                                                                                aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-content w-100 h-75">
+                                                                            <img src="./assets/slider/slide-10.jpg"
+                                                                                data-splide-lazy="./assets/slider/slide-10.jpg" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                </div>
+                <div class="gallery-controller">
+                    <button class="gallery-controller__left"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="gallery-controller__right"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- Benefits -->
+        <section class="container">
+            <div class="row border border-top-0 border-start-0 border-end-0">
+                <div class="col border border-top-0 border-bottom-0 border-start-0 border-end-1"><i
+                        class="fa-regular fa-gem"></i></div>
+                <div class="col border border-top-0 border-bottom-0 border-start-0 border-end-1"><i
+                        class="fa-solid fa-floppy-disk"></i>
+                </div>
+                <div class="col"><i class="fa-solid fa-chart-column"></i></div>
+            </div>
+            <div class="row border-bottom-1">
+                <div class="col border border-top-0 border-start-0 border-end-1"><i class="fa-regular fa-gem"></i></div>
+                <div class="col border border-top-0 border-start-0 border-end-1"><i class="fa-solid fa-floppy-disk"></i>
+                </div>
+                <div class="col"><i class="fa-solid fa-chart-waterfall"></i></div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="container"></section>
+    </main>
+    <footer class="container-fluid g-0">
+        <div class="container"></div>
+    </footer>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
 
     <script src="./js/index.js"></script>
-    <!-- <script src="./js/lazyLoad.js" type="module"></script> -->
+    <script src="./js/gallery.js"></script>
+
+
 </body>
 
 </html>
